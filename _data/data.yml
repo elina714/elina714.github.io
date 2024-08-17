@@ -231,10 +231,10 @@ publications:
         authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
         conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
 
-      - title: A syntax directed compiler for Algol 60
-        link: "#"
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+      - title: Efficient and robust relaxation procedures for multi-component mixtures including phase transition
+        link: "https://doi.org/10.1016/j.jcp.2017.02.066"
+        authors: Ee Han, Maren Hantke, Siegfried Müller
+        conference: " J. Comput. Phys. (2017), 217-239"
 
 skills:
     title: Skills &amp; Proficiency
