@@ -217,20 +217,37 @@ oss:
 publications:
     title: Publications
     papers:
-      - title: An adaptive GRP scheme for compressible fluid flows
+      - title: "An adaptive GRP scheme for compressible fluid flows"
         link: "https://doi.org/10.1016/j.jcp.2009.10.038"
         authors:  E. Han, J. Li, and H. Tang
         conference: J. Comput. Phys., 229(2010), 1448-1466.
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        link: "#"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+      - title: "Accuracy of the adaptive GRP scheme and the simulation of 2-D Riemann problem for compressible Euler equations"
+        link: "https://doi.org/10.4208/cicp.280410.300710a"
+        authors: E. Han, J. Li, and H. Tang
+        conference: "Commun. Comput. Phy. 10(2011), 577-606."
 
-      - title: Efficient and robust relaxation procedures for multi-component mixtures including phase transition
+      - title: "Exact Riemann solutions in ducts with discontinuous cross-section"
+        link: "https://doi.org/10.1090/S0033-569X-2014-01353-3"
+        authors: E. Han, M. Hantke, and G. Warnecke
+        conference: "Z. Angew. Math. Mech.  93(2012), 465-475."
+        
+      - title: "Exact Riemann solutions to shallow water equations"
+        link: "https://www.jstor.org/stable/43639119"
+        authors: E. Han and G. Warnecke
+        conference: "Quart. Appl. Math., 72 (2014), 407-453 "
+        
+        
+      - title: "Criteria for non uniqueness of Riemann solutions to compressible duct flows"
+        link: "https://doi.org/10.4208/cicp.280410.300710a"
+        authors: E. Han, M. Hantke, and G. Warnecke
+        conference: "J. Hyp. Diff. Eq.  9(2012), 403-449."
+
+      - title: "Efficient and robust relaxation procedures for multi-component mixtures including phase transition"
         link: "https://doi.org/10.1016/j.jcp.2017.02.066"
         authors: E. Han, M. Hantke, S. Müller
         conference: " J. Comput. Phys. (2017), 217-239"
+
 
 skills:
     title: Skills &amp; Proficiency
