@@ -216,15 +216,11 @@ oss:
 
 publications:
     title: Publications
-    intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
     papers:
-      - title: The Art of Computer Programming
-        link: "#"
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+      - title: An adaptive GRP scheme for compressible fluid flows
+        link: "https://doi.org/10.1016/j.jcp.2009.10.038"
+        authors:  E. Han, J. Li, and H. Tang
+        conference: J. Comput. Phys., 229(2010), 1448-1466.
 
       - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
         link: "#"
@@ -233,7 +229,7 @@ publications:
 
       - title: Efficient and robust relaxation procedures for multi-component mixtures including phase transition
         link: "https://doi.org/10.1016/j.jcp.2017.02.066"
-        authors: Ee Han, Maren Hantke, Siegfried Müller
+        authors: E. Han, M. Hantke, S. Müller
         conference: " J. Comput. Phys. (2017), 217-239"
 
 skills:
