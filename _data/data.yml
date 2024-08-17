@@ -63,28 +63,18 @@ career-profile:
 education:
     title: Education
     info:
-      - degree: PhD in Mathematics
+      - degree: PhD in Mathematics (Summa Cum Laude)
         university: Otto von Guericke university Magdeburg
-        time: 2009 - 2014
-        details: |
-          Analysis and numerical simulation compressed fluid in physical and
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
-      - degree: BSc in Applied Mathematics
-        university: Bristol University
-        time: 2007 - 2011
-        details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
+        time: 2009 - 2013
+        
+      - degree: Master in Applied Mathematics
+        university: Capital Normal University (CNU)
+        time: 2006 - 2009
+        
+      - degree: B.S. in information and computer science,
+        university: Northwest Normal University (NWNU)
+        time: 2002 - 2006
+      
 
 experiences:
     title: Experiences
@@ -254,14 +244,14 @@ publications:
         conference: " J. Comput. Phys. (2017), 217-239"
         
       - title: "On  Riemann  solutions  to  weakly  hyperbolic systems:  Part 1. Modelling supercritical  flows in arteries"
-        link: "https://cl.gy/eEegw"
+        link: #
         authors: Han E. E., Warnecke G., Toro E. F., and Siviglia A.
-        conference: " University of Cambridge, UK, Modelling subcritical flows in arteries, technical report NI15003NPA, Isaac Newton Institute for Mathematical Sciences 2015"
+        conference: " University of Cambridge, UK, Modelling subcritical flows in arteries, technical report NI15003NPA, Isaac Newton Institute for Mathematical Sciences 2015a"
 
       - title: "On  Riemann  solutions  to  weakly  hyperbolic systems:  Part 2. Modelling supercritical  flows in arteries"
-        link: "https://cl.gy/eEegw"
+        link: #
         authors: Han E. E., Warnecke G., Toro E. F., and Siviglia A.
-        conference: " University of Cambridge, UK, Modelling subcritical flows in arteries, technical report NI15003NPA, Isaac Newton Institute for Mathematical Sciences 2015"
+        conference: " University of Cambridge, UK, Modelling subcritical flows in arteries, technical report NI15003NPA, Isaac Newton Institute for Mathematical Sciences 2015b"
         
 
         
