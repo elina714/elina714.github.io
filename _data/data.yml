@@ -45,10 +45,10 @@ sidebar:
     interests:
       title: Interests
       info:
-        - item: Climbing
+        - item: Jogging
           link:
 
-        - item: Snowboarding
+        - item: Garding
           link:
 
         - item: Cooking
@@ -79,43 +79,25 @@ education:
 experiences:
     title: Experiences
     info:
-      - role: Lead Developer
-        time: 2015 - Present
-        company: Startup Hubs, San Francisco
+      - role: Full-time Parenting
+        time: 2018 - Present
         details: |
-          Analysis and numerical simulation compressed fluid in physical and
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-          enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-          error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo.
-            - Bullet point
-            - Bullet point
-      - role: Senior Software Engineer
-        time: 2014 - 2015
-        company: Google, London
+          Full time caregiver of two kids, plus overall homemangage
+            - Attend online course on Udemy
+            - improve language skill
+      - role: Postdoctoral fellow Position 
+        time: 2014 - 2017
+        company: Bremen university, Bremen
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
-      - role: UI Developer
-        time: 2012 - 2014
-        company: Amazon, London
-        details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          Project on high order Godunov scheme for shallow water equations under the auspice of
+          Prof. Alfred Schmidt
+            - Teaching Finite volume scheme for hyperbolic conservation laws
+            - Manage the progress of the project
+      - role: Postdoctoral Position
+        time: 2013 - 2014
+        company: Magdeburg University 
+            - Teaching Assistant in Linear Algebra II
+            - Research in blood flows in arteries
 
 certifications:
       title: Certifications
