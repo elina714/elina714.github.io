@@ -82,15 +82,14 @@ experiences:
       - role: Full-time Parenting
         time: 2018 - Present
         details: |
-          Full time caregiver of two kids, plus overall homemangage
+            - Full time caregiver of two kids, plus overall homemangage
             - Attend online course on Udemy
             - improve language skill
       - role: Postdoctoral fellow Position 
         time: 2014 - 2017
         company: Bremen university, Bremen
         details: |
-          Project on high order Godunov scheme for shallow water equations under the auspice of
-          Prof. Alfred Schmidt
+            - Project on high order Godunov scheme for shallow water equations under the auspice of Prof. Alfred Schmidt
             - Teaching Finite volume scheme for hyperbolic conservation laws
             - Manage the progress of the project
       - role: Postdoctoral Position
@@ -100,29 +99,11 @@ experiences:
             - Research in blood flows in arteries
 
 certifications:
-      title: Certifications
+      title: Awards and Certifications
       list:
-        - name: CV Builder
-          start: 2020
-          end: 2021
-          organization: Microsoft
-          credentialid: 111-222
-          credentialurl: www.google.com
-          credentialname: Google
+        - name: The Dissertation Award of the University of Magdeburg 2013
           details: |
-            Details about cert. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-            Nullam eget orci purus. Nullam ultrices neque nibh.
-            Aenean fermentum, felis vulputate suscipit accumsan,
-            sem enim bibendum augue, sed convallis arcu lacus at dui.
-            Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-            Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-            Praesent venenatis erat non augue suscipit consectetur.
-
-            Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-            fringilla vel. Ut euismod, sem sed vulputate venenatis,
-            justo diam viverra velit, sed rhoncus leo leo eu justo.
-            Suspendisse placerat risus ante, sed porta nisi blandit at.
+            The Dissertation Award of the University of Magdeburg is traditionally awarded for the best doctoral student of the year and  provided by the Karin--Witte Foundation 
         - name: Git learning
           start: 2019
           end:
