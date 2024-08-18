@@ -48,7 +48,7 @@ sidebar:
         - item: Jogging
           link:
 
-        - item: Garding
+        - item: Gardening
           link:
 
         - item: Cooking
@@ -81,6 +81,7 @@ experiences:
     info:
       - role: Full-time Parenting
         time: 2018 - Present
+        company: Self-Imployment, Lippstadt
         details: |
             - Full time caregiver of two kids, plus overall homemangage
             - Attend online course on Udemy
