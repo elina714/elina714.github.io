@@ -95,7 +95,8 @@ experiences:
             - Manage the progress of the project
       - role: Postdoctoral Position
         time: 2013 - 2014
-        company: Magdeburg University 
+        company: Magdeburg University
+        details: |
             - Teaching Assistant in Linear Algebra II
             - Research in blood flows in arteries
 
@@ -106,6 +107,8 @@ certifications:
           start: 2019
           details: |
             The Dissertation Award of the University of Magdeburg is traditionally awarded for the best doctoral student of the year and  provided by the Karin--Witte Foundation 
+        
+        
         - name: Git learning
           start: 2019
           end:
