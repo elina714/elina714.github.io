@@ -103,6 +103,7 @@ certifications:
       title: Awards and Certifications
       list:
         - name: The Dissertation Award of the University of Magdeburg 2013
+          start: 2019
           details: |
             The Dissertation Award of the University of Magdeburg is traditionally awarded for the best doctoral student of the year and  provided by the Karin--Witte Foundation 
         - name: Git learning
