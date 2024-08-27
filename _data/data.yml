@@ -111,7 +111,7 @@ certifications:
         
         - name: Git learning
           start: 2020
-          end:2021
+          end: 2021
           organization: Microsoft
           credentialid: 111-222
           credentialurl: www.github.com
