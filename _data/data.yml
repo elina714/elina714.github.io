@@ -116,9 +116,9 @@ projects:
         link: "#"
         tagline: "To find the cheapest flight based on KIWI KPI"
 
-      - title: PC Games: Snake, Turtle Across street,...
+      - title: PC Games
         link: "#"
-        tagline: "I constrcted serveral classic games on my computer"
+        tagline: "I constrcted serveral classic games like Snake, Turtle Across street on my computer"
 
 oss:
     title: True Love Apps on Android system
