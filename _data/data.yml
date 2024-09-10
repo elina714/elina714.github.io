@@ -185,10 +185,7 @@ publications:
 skills:
     title: Skills &amp; Proficiency
 
-    toolset:
-       - name: C
-        level: 98%
-        
+    toolset: 
       - name: Python & Django
         level: 80%
 
@@ -198,8 +195,8 @@ skills:
       - name: HTML5 & CSS
         level: 95%
         
-      - name: Sketch & Photoshop
-        level: 60%
+      - name: C
+        level: 98%
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
