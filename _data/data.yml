@@ -17,19 +17,7 @@ sidebar:
     phone: 012345678
     timezone: Central European Time
     citizenship:
-    website: blog.webjeda.com #do not add http://
-    linkedin: appearsoon
-    xing: appearsoon
-    github: elina714
-    telegram: # appearsoon
-    gitlab:
-    bitbucket:
-    twitter: 'appearsoon'
-    stack-overflow: # appearsoon
-    codewars:
-    goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: http://www.africau.edu/images/default/sample.pdf
-
+    
     languages:
       title: Languages
       info:
@@ -199,21 +187,18 @@ skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: Python & Django
+       - name: C
         level: 98%
+        
+      - name: Python & Django
+        level: 80%
 
       - name: Javascript & jQuery
-        level: 98%
-
-      - name: Angular
-        level: 98%
-
+        level: 50%
+        
       - name: HTML5 & CSS
         level: 95%
-
-      - name: Ruby on Rails
-        level: 85%
-
+        
       - name: Sketch & Photoshop
         level: 60%
 
