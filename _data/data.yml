@@ -14,21 +14,21 @@ sidebar:
 
     # Sidebar links
     email: eehanzhang@gmail.com
-    phone: 012 345 6789
+    phone: 012345678
     timezone: Central European Time
     citizenship:
     website: blog.webjeda.com #do not add http://
-    linkedin: alandoe
-    xing: alandoe
-    github: sharu725
-    telegram: # add your nickname without '@' sign
+    linkedin: appearsoon
+    xing: appearsoon
+    github: elina714
+    telegram: # appearsoon
     gitlab:
     bitbucket:
-    twitter: '@webjeda'
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    twitter: 'appearsoon'
+    stack-overflow: # appearsoon
     codewars:
-    goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: http://www.africau.edu/images/default/sample.pdf
+    #goodreads: # Number-Username, e.g. 123456-alandoe
+    #pdf: http://www.africau.edu/images/default/sample.pdf
 
     languages:
       title: Languages
@@ -109,41 +109,38 @@ certifications:
             The Dissertation Award of the University of Magdeburg is traditionally awarded for the best doctoral student of the year and  provided by the Karin--Witte Foundation 
         
         
-        - name: Git learning
-          start: 2020
-          end: 2021
-          organization: Microsoft
+        - name: cs50
+          start: 2024
+          end: 2024
+          organization: Harvard University
           credentialid: 111-222
-          credentialurl: www.github.com
-          credentialname: Github
-          details: |
+          credentialurl: #
+          credentialname: Harvard University
+          details: |It's a highly respected course offered by Harvard University. This means that you'll be learning from experienced instructors and getting access to a top-quality course.
 
 projects:
     title: Projects
     intro: >
-       several projects .......
     assignments:
-      - title: website template
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+      - title: Personal blog
+        link: "https://elina714.github.io/"
+        tagline: "A personal blog designed to record my studing and life"
 
-      - title: website template
+      - title: A flight booking website
         link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
+        tagline: "To find the cheapest flight based on KIWI KPI"
 
-      - title: website template
+      - title: PC Games: Snake, Turtle Across street,...
         link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+        tagline: "I constrcted serveral classic games on my computer"
 
 oss:
-    title: OSS Contributions
-    intro: >
-      Open source software contributions in this
-      section.
+    title: True Love Apps on Android system
+    intro: > An app to help people to find his/her True love
     contributions:
-      - title: Tempo
+      - title: True Love
         link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+        tagline: "Under constructs"
 
 publications:
     title: Publications
