@@ -122,7 +122,8 @@ projects:
 
 oss:
     title: True Love Apps on Android system
-    intro: > An app to help people to find his/her True love
+    intro: > 
+           An app to help people to find his/her True Love
     contributions:
       - title: True Love
         link: "#"
