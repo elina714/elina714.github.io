@@ -37,15 +37,6 @@ header:
     🔗 Open Full Interactive Report
   </a>
 </p>
-<!-- 🚀 Full-Screen Button -->
-<p style="text-align: center; margin: 1.5rem 0;">
-  <a href="{{ '/files/cyclistic_project/cyclistic-analysis.html' | relative_url }}"
-     target="_blank"
-     class="btn btn--primary">
-    🔗 Open Full Interactive Report
-  </a>
-</p>
-
 ---
 
 ## 📋 Project Overview
