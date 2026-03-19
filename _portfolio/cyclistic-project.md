@@ -13,14 +13,12 @@ tags:
   - Google Data Analytics
   - Cyclistic
 header:
-  teaser: https://elina714.github.io/files/cyclistic_project/fleet_evolution_2020_2021.png
-  image: https://elina714.github.io/files/cyclistic_project/fleet_evolution_2020_2021.png
+  teaser: https://elina714.github.io/files/cyclistic_project/fleet_evolution_2020_2021.png  
+  image: https://elina714.github.io/files/cyclistic_project/fleet_evolution_2020_2021.png  
   caption: "Fleet Evolution 2020–2021"
 ---
 
 > 🚀 This project demonstrates end-to-end data analysis: data cleaning, exploration, visualization, and business strategy recommendations.
-
----
 
 <!-- 🔗 Interactive Report Embed -->
 <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden; max-width: 100%;">
@@ -31,12 +29,13 @@ header:
     allowfullscreen>
   </iframe>
 </div>
----
+
 <p>
   <a href="https://elina714.github.io/files/cyclistic_project/cyclistic-analysis.html" target="_blank">
     🔗 Open Full Interactive Report
   </a>
 </p>
+
 ---
 
 ## 📋 Project Overview
