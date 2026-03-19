@@ -13,8 +13,8 @@ tags:
   - Google Data Analytics
   - Cyclistic
 header:
-  teaser: /files/fleet_evolution_2020_2021.png
-  image: /files/fleet_evolution_2020_2021.png
+  teaser: https://elina714.github.io/files/cyclistic_project/fleet_evolution_2020_2021.png
+  image: https://elina714.github.io/files/cyclistic_project/fleet_evolution_2020_2021.png
   caption: "Fleet Evolution 2020–2021"
 ---
 
@@ -25,7 +25,7 @@ header:
 <!-- 🔗 Interactive Report Embed -->
 <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); margin: 25px 0;">
   <iframe 
-    src="{{ '/files/report.html' | relative_url }}" 
+    src="{{ 'https://elina714.github.io/files/cyclistic_project/cyclistic-analysis.html' | relative_url }}" 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 12px;"
     title="Cyclistic Data Analysis Report"
     loading="lazy"
@@ -35,7 +35,7 @@ header:
 
 <!-- 🚀 Full-Screen Button -->
 <p style="text-align: center; margin: 1.5rem 0;">
-  <a href="{{ '/files/report.html' | relative_url }}" 
+  <a href="{{ 'https://elina714.github.io/files/cyclistic_project/report.html' | relative_url }}" 
      target="_blank" 
      class="btn btn--primary"
      style="display: inline-block; padding: 12px 28px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 6px; font-weight: 600;">
