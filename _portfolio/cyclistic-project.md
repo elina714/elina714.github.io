@@ -23,17 +23,20 @@ header:
 ---
 
 <!-- 🔗 Interactive Report Embed -->
-{% raw %}
-<div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); margin: 25px 0;">
+<div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe
     src="https://elina714.github.io/files/cyclistic_project/cyclistic-analysis.html"
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 12px;"
-    title="Cyclistic Data Analysis Report"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
     loading="lazy"
     allowfullscreen>
   </iframe>
 </div>
-{% endraw %}
+
+<p>
+  <a href="https://elina714.github.io/files/cyclistic_project/cyclistic-analysis.html" target="_blank">
+    🔗 Open Full Interactive Report
+  </a>
+</p>
 <!-- 🚀 Full-Screen Button -->
 <p style="text-align: center; margin: 1.5rem 0;">
   <a href="{{ '/files/cyclistic_project/cyclistic-analysis.html' | relative_url }}"
