@@ -24,22 +24,22 @@ header:
 
 <!-- 🔗 Interactive Report Embed -->
 <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); margin: 25px 0;">
-  <iframe>
-  src="{{ '/files/cyclistic_project/cyclistic-analysis.html' | relative_url }}"
-  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 12px;"
-  title="Cyclistic Data Analysis Report"
-  loading="lazy"
-  allowfullscreen>
-</iframe>
+  <iframe
+    src="{{ '/files/cyclistic_project/cyclistic-analysis.html' | relative_url }}"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 12px;"
+    title="Cyclistic Data Analysis Report"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
 </div>
 
 <!-- 🚀 Full-Screen Button -->
 <p style="text-align: center; margin: 1.5rem 0;">
- <a href="{{ '/files/cyclistic_project/cyclistic-analysis.html' | relative_url }}"
-   target="_blank"
-   class="btn btn--primary">
-  🔗 Open Full Interactive Report
-</a>
+  <a href="{{ '/files/cyclistic_project/cyclistic-analysis.html' | relative_url }}"
+     target="_blank"
+     class="btn btn--primary">
+    🔗 Open Full Interactive Report
+  </a>
 </p>
 
 ---
