@@ -1286,3 +1286,46 @@ h3 {
     max-width: 100%;
     width: 100%;
 }
+/* Custom list styling for insights */
+.insight-list-custom {
+    list-style: none;
+    padding-left: 0;
+    margin: 15px 0 0 0;
+}
+
+.insight-list-custom li {
+    padding: 12px 0;
+    border-bottom: 1px dashed #e9ecef;
+    line-height: 1.7;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.insight-list-custom li:last-child {
+    border-bottom: none;
+}
+
+.insight-list-custom li strong {
+    color: #667eea;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Section spacing */
+.weekly-analysis-section,
+.distance-analysis-section {
+    margin: 30px 0;
+}
+
+.analysis-comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+@media (max-width: 768px) {
+    .analysis-comparison-grid {
+        grid-template-columns: 1fr;
+    }
+}
