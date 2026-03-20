@@ -13,8 +13,8 @@ tags:
   - Google Data Analytics
   - Cyclistic
 header:
-  teaser: https://elina714.github.io/files/cyclistic_project/fleet_evolution_2020_2021.png  
-  image: https://elina714.github.io/files/cyclistic_project/fleet_evolution_2020_2021.png  
+  teaser: https://elina714.github.io/files/cyclistic_project/top_20_route.png  
+  image: https://elina714.github.io/files/cyclistic_project/combined_duration_analysis.png  
   caption: "Fleet Evolution 2020–2021"
 ---
 
