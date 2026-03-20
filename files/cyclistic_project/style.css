@@ -1345,3 +1345,21 @@ h3 {
     padding: 4px 10px;
     border-radius: 4px;
 }
+.analysis-comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 25px 0;
+    align-items: stretch;  /* ← Makes columns equal height */
+}
+
+.analysis-comparison-grid > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.analysis-comparison-grid .insight-card,
+.analysis-comparison-grid .figure-container {
+    flex: 1;  /* ← Expands to fill available space */
+    height: 100%;
+}
