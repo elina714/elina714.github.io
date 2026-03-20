@@ -1329,3 +1329,19 @@ h3 {
         grid-template-columns: 1fr;
     }
 }
+<!-- Add this to your style.css -->
+.highlight-member {
+    color: #667eea;
+    font-weight: 600;
+    background: #f0f4ff;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.highlight-casual {
+    color: #f5576c;
+    font-weight: 600;
+    background: #fff0f3;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
