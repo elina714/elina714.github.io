@@ -404,7 +404,110 @@
         </div>
     </div>
 </div>
+<!-- Top 20 most used route -->
+<div class="analysis-comparison-grid">
+    <!-- Figure -->
+    <div class="analysis-figure">
+        <figure class="figure-container">
+            <img src="top_20_route.png" 
+                 alt="Top 20 Route distribution" 
+                 class="responsive-img">
+            <figcaption class="figure-caption">
+                <strong>Fig. 5:</strong> Top 20 Trip Route vs. Riders
+                <span class="caption-detail">
+                    The blue dots in the south are located in Hyde Park. This is the home of the University of Chicago.. 
+                     The red dots are clustered around Navy Pier, Millennium Park, and the Lakefront Trail.
+                </span>
+            </figcaption>
+        </figure>
+    </div>
+    
+    <!-- Insights -->
+    <div class="analysis-insights">
+        <div class="insight-card">
+            <div class="insight-header">
+                <span class="insight-icon">💡</span>
+                <h3>Key Findings</h3>
+            </div>
+            <div class="insight-content">
+                <ul class="insight-list-custom">
+                    <li><strong>Members:</strong> Students and faculty are the ultimate "Members." They use Divvy as their primary 
+                        transit to get from the Metra train station to campus, or from dorms to labs.</li>
+                    <li><strong>Casuals:</strong> Casual riders (tourists or locals on a weekend) go to Navy Pier,
+                         grab a bike, ride the "Loop" along the water, and bring it back.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Top Routes Analysis Table -->
+<div class="section">
+    <div class="section-title">🛣️ Top Routes by User Type</div>
+    
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Route</th>
+                <th>User Type</th>
+                <th>Total Rides</th>
+                <th>Pattern</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Member Commute Routes -->
+            <tr class="low-missing">
+                <td>UChicago (South) → UChicago (North)</td>
+                <td><span class="highlight-member">Member</span></td>
+                <td><strong>8,305</strong></td>
+                <td>🚴 Go (Commute)</td>
+            </tr>
+            <tr class="low-missing">
+                <td>UChicago (North) → UChicago (South)</td>
+                <td><span class="highlight-member">Member</span></td>
+                <td><strong>7,515</strong></td>
+                <td>🏠 Return (Commute)</td>
+            </tr>
+            <tr class="low-missing">
+                <td>UChicago (South) → UChicago (Central)</td>
+                <td><span class="highlight-member">Member</span></td>
+                <td><strong>7,920</strong></td>
+                <td>🚴 Go (Commute)</td>
+            </tr>
+            <tr class="low-missing">
+                <td>UChicago (Central) → UChicago (South)</td>
+                <td><span class="highlight-member">Member</span></td>
+                <td><strong>7,516</strong></td>
+                <td>🏠 Return (Commute)</td>
+            </tr>
+            <!-- Casual Leisure Routes -->
+            <tr class="highlight-row">
+                <td>Navy Pier Loop (Start=End)</td>
+                <td><span class="highlight-casual">Casual</span></td>
+                <td><strong>16,961</strong></td>
+                <td>🎡 Leisure Loop</td>
+            </tr>
+            <tr class="highlight-row">
+                <td>Millennium Park Loop (Start=End)</td>
+                <td><span class="highlight-casual">Casual</span></td>
+                <td><strong>11,098</strong></td>
+                <td>📸 Sightseeing</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Key Insight Box -->
+    <div class="highlight-box">
+        <strong>📌 Key Finding:</strong>
+        <span class="highlight-text">
+            Members show <strong>bidirectional commute patterns</strong> (home ↔ work), while Casual riders 
+            prefer <strong>circular leisure routes</strong> at tourist destinations. Navy Pier alone accounts 
+            for <strong>16,961 circular trips</strong> — the highest single route volume in the dataset.
+        </span>
+    </div>
+</div>
+
+            
     <!-- Interactive Visualization -->
     <div class="interactive-section">
         <div class="section-title">️ Most Popular Start Stations</div>
