@@ -1363,3 +1363,34 @@ h3 {
     flex: 1;  /* ← Expands to fill available space */
     height: 100%;
 }
+.highlight-member {
+    color: #667eea;
+    font-weight: 600;
+    background: #f0f4ff;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.highlight-casual {
+    color: #f5576c;
+    font-weight: 600;
+    background: #fff0f3;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+/* Add to style.css if needed */
+.highlight-box ul {
+    margin: 10px 0 0 20px;
+    padding-left: 10px;
+}
+
+.highlight-box ul li {
+    margin: 5px 0;
+    color: #d68910;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.highlight-box ul li strong {
+    color: #b7950b;
+}
