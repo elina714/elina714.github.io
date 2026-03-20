@@ -614,7 +614,70 @@
         
      <div class="container">  
         <!-- Spatial Analysis -->
-        <h2>4. Spatial Analysis: Heatmaps</h2>
+        <h2>4. Spatial Analysis</h2>
+         
+<!-- Special Analysis: Rider Type Comparison -->
+<section class="section">
+    <div class="section-title">🎯 Special Points: Rider Type and total ride time Comparison</div>
+    
+    <!-- Figure: Pie Chart -->
+    <div class="figures-grid">
+        <figure class="figure-container">
+            <img src="ride_comparison_pie.png" 
+                 alt="Proportion of total rides and total ride time by user type" 
+                 class="responsive-img img-medium">
+            <figcaption class="figure-caption">
+                <strong>Fig. 6:</strong> Ride Volume vs. Ride Time Distribution
+                <span class="caption-detail">
+                    Members account for more rides (57%), but Casual riders consume 60.7% of total fleet time 
+                    due to significantly longer average trip duration (23.5 min vs. 12.2 min).
+                </span>
+            </figcaption>
+        </figure>
+    </div>
+    
+    <!-- Comparison Table -->
+    <table class="comparison-table">
+        <thead>
+            <tr>
+                <th>User Type</th>
+                <th>Total Rides</th>
+                <th>Total Minutes</th>
+                <th>Avg. Duration (Min)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="highlight-row">
+                <td><span class="highlight-casual">Casual</span></td>   
+                <td>4,842,378</td>
+                <td>127,301,800</td>
+                <td class="highlight-value">~23.5</td>
+            </tr>
+            <tr>
+                <td><span class="highlight-member">Member</span></td>
+                <td>6,409,773</td>
+                <td>82,433,290</td>
+                <td>~12.2</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Key Insight Box -->
+    <div class="highlight-box">
+        <strong>💡 Key Finding:</strong>
+        <span class="highlight-text">
+            While Members take more total rides (57% of trips), Casual riders spend nearly 
+            <strong>2× longer per trip</strong> (23.5 min vs. 12.2 min). This indicates:
+            <ul style="margin: 10px 0 0 20px; padding-left: 10px;">
+                <li><strong>Casual users:</strong> Leisure/recreational trips with extended exploration time</li>
+                <li><strong>Member users:</strong> Efficient, point-to-point commuting</li>
+            </ul>
+            <br>
+            <strong>🚀 Opportunity:</strong> Casual riders account for <strong>60.7% of total fleet utilization time</strong> 
+            — representing massive conversion potential through targeted membership campaigns.
+        </span>
+    </div>
+</section>
         
         <div class="section">
             <div class="section-title">🗺️ Rider Type Usage Patterns</div>
