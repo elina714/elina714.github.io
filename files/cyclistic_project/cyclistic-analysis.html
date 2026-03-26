@@ -1453,45 +1453,209 @@
                  We recommend that the engineering team restores raw GPS pings to allow for better infrastructure planning.</li>
         </div>
 </section>
-<section>
-    <h3> The lost end parking coordinates</h3>
-    <div>
-        <ul>
-            <li> In two years, 10,629 classic bike lost the end parking coordiantes.</li>
-            <li> The Fig 10. reveals two distinct patterns. 
-                While 18.6% are short-duration (less than 5 hours) technical sync errors, 
-                The bike was probably returned to a station shortly after, but the system failed to record the end location properly at that moment (common with classic bikes that rely on station hardware). Many of these get resolved quickly by the next user or staff, which is why the duration stays short.
+<!-- Missing End Coordinates Analysis -->
+<section class="section">
+    <div class="section-title">🚨 Lost End Parking Coordinates Analysis</div>
+    
+    <!-- Summary Stats -->
+    <div class="stats-box">
+        <div class="stat-item highlight">
+            <span class="stat-label">Total Missing</span>
+            <span class="stat-value">10,629</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Time Period</span>
+            <span class="stat-value">2 Years</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Casual Riders</span>
+            <span class="stat-value percent">80.5%</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">24h Timeouts</span>
+            <span class="stat-value percent">54.1%</span>
+        </div>
+    </div>
+    
+    <!-- Pattern Analysis -->
+    <div class="findings-box">
+        <div class="section-title" style="font-size: 1.2em; border: none; padding: 0; margin-bottom: 15px;">
+            📊 Two Distinct Missing Data Patterns
+        </div>
+        
+        <ul class="compact-list">
+            <li>
+                <strong>Pattern 1: Technical Sync Errors (18.6%)</strong>
+                <span class="caption-detail">
+                    Short-duration gaps lasting <strong>less than 5 hours</strong>. 
+                    The bike was probably returned to a station shortly after, but the system failed to record 
+                    the end location properly at that moment (common with classic bikes that rely on station hardware). 
+                    Many of these get resolved quickly by the next user or staff, which is why the duration stays short.
+                </span>
             </li>
-            <li> The remaining 54.1% are 24-hour system timeouts. 
-                These are the big spike you saw around 1,440–1,500 minutes in the histogram.
-                Divvy’s system automatically closes any open classic-bike ride after 24 consecutive 
-                hours if it hasn’t been properly docked. At that point, the trip is forcibly ended for billing purposes, 
-                end_lat/end_lng (and end station info) remain missing. The rider may be charged a lost/stolen bike fee </li>
+            <li>
+                <strong>Pattern 2: 24-Hour System Timeouts (54.1%)</strong>
+                <span class="caption-detail">
+                    These are the big spike around <strong>1,440–1,500 minutes</strong> in the histogram. 
+                    Divvy's system automatically closes any open classic-bike ride after 24 consecutive hours 
+                    if it hasn't been properly docked. At that point, the trip is forcibly ended for billing purposes, 
+                    but <code>end_lat</code>/<code>end_lng</code> (and end station info) remain missing. 
+                    The rider may be charged a lost/stolen bike fee.
+                </span>
+            </li>
         </ul>
     </div>
-    <figure class="figure-container">
-            <img src="duration_distribution_all.png" 
-                 alt="Distribution of the missing end geometry coordinates " 
-                 class="responsive-img">
-            <figcaption class="figure-caption">
-                 Fig. 10 : Distribution of the missing end geometry coordinates 
-                <span class="caption-detail">
-                </span>
-            </figcaption>
-    </figure>
-
-    <figure class="figure-container">
-            <img src="duration_distribution_600.png" 
-                 alt="Distribution of the missing end geometry coordinates unter 10 hours " 
-                 class="responsive-img">
-            <figcaption class="figure-caption">
-                 Fig. 11 : Distribution of the missing end geometry coordinates uter 10 hours
-                <span class="caption-detail">
-                </span>
-            </figcaption>
-    </figure>
-
-
+    
+    <!-- Figure 10: Duration Distribution -->
+    <div class="figure-container">
+        <img src="duration_distribution_all.png" 
+             alt="Distribution of missing end geometry coordinates" 
+             class="responsive-img img-medium">
+        <figcaption class="figure-caption">
+            <strong>Fig. 10:</strong> Distribution of Missing End Coordinates (All Durations)
+            <span class="caption-detail">
+                Bimodal distribution showing two distinct patterns: short-duration sync errors (&lt;5 hours) 
+                and 24-hour system timeouts (1,440–1,500 minutes).
+            </span>
+        </figcaption>
+    </div>
+    
+    <!-- Figure 11: Short Duration Detail -->
+    <div class="figure-container">
+        <img src="duration_distribution_600.png" 
+             alt="Distribution of missing end geometry coordinates under 10 hours" 
+             class="responsive-img img-medium">
+        <figcaption class="figure-caption">
+            <strong>Fig. 11:</strong> Short-Duration Pattern Detail (&lt;10 Hours)
+            <span class="caption-detail">
+                Technical sync errors concentrated in the first few hours, representing bikes returned 
+                but not properly logged at the station.
+            </span>
+        </figcaption>
+    </div>
+    
+    <!-- User Type Analysis -->
+    <div class="insights-grid">
+        <div class="insight-card casual-card">
+            <div class="insight-header">
+                <span class="insight-icon">🎯</span>
+                <h3>Casual Riders: 80.5% of Missing Data</h3>
+            </div>
+            <div class="insight-content">
+                <p>
+                    Casual riders (single-ride or day-pass users) are <strong>dramatically over-represented</strong> 
+                    in the "problematic" rides that never properly returned the bike — especially classic bikes 
+                    that triggered the 24-hour auto-timeout.
+                </p>
+                <div class="highlight-box">
+                    <strong>📌 Key Finding:</strong>
+                    <span class="highlight-text">
+                        Casual riders dominate almost every hour, but the gap is especially huge in the 
+                        <strong>afternoon and evening</strong>. Peak around <strong>17:00–19:00 (5–7 PM)</strong> — 
+                        over 400 rides at 17:00! Very high activity from 14:00 to 21:00.
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="insight-card member-card">
+            <div class="insight-header">
+                <span class="insight-icon">👔</span>
+                <h3>Member Riders: 19.5% of Missing Data</h3>
+            </div>
+            <div class="insight-content">
+                <p>
+                    Member riders have a <strong>much flatter and lower pattern</strong> overall. 
+                    This suggests members are more familiar with proper docking procedures and 
+                    less likely to abandon bikes.
+                </p>
+                <div class="usage-pattern">
+                    <strong>Pattern:</strong> Consistent, low-volume throughout the day with minimal evening spikes.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Figure 12: User Type Pie Chart -->
+    <div class="figure-container">
+        <img src="missing_rides_pie.png" 
+             alt="Distribution of rides with missing end coordinates by rideable type (2021-2022)" 
+             class="responsive-img img-medium">
+        <figcaption class="figure-caption">
+            <strong>Fig. 12:</strong> User Type Distribution of Missing End Coordinates (2021-2022)
+            <span class="caption-detail">
+                Casual riders account for 80.5% of all missing end coordinates, while members represent only 19.5%.
+            </span>
+        </figcaption>
+    </div>
+    
+    <!-- Figure 13: Hourly Pattern -->
+    <div class="figure-container">
+        <img src="ride_hours_comparison.png" 
+             alt="Ride start hours – Casual vs Member (among missing-end rides)" 
+             class="responsive-img">
+        <figcaption class="figure-caption">
+            <strong>Fig. 13:</strong> Hourly Start Patterns – Casual vs Member (Missing-End Rides)
+            <span class="caption-detail">
+                Casual riders (blue bars) dominate afternoon/evening hours, with peak risk at 17:00–19:00. 
+                Member riders (orange bars) show flatter, lower distribution throughout the day.
+            </span>
+        </figcaption>
+    </div>
+    
+    <!-- Key Insight Box -->
+    <div class="highlight-box">
+        <strong>💡 Critical Insight:</strong>
+        <span class="highlight-text">
+            <strong>Casual riders + Evening starts = Highest risk group for bikes disappearing.</strong>
+            Casual riders (80.5% of missing-end rides) frequently start in the afternoon/evening, 
+            take the bike for a fun ride, and then fail to dock it properly when they finish 
+            (dinner, event, hotel, etc.). The system then automatically closes the ride after ~24 hours 
+            → missing end coordinates.
+        </span>
+    </div>
+    
+    <!-- Station Analysis -->
+    <div class="findings-box">
+        <div class="section-title" style="font-size: 1.2em; border: none; padding: 0; margin-bottom: 15px;">
+            🗺️ Top 20 High-Risk Stations
+        </div>
+        <p class="note-text">
+            This is <strong>not evenly distributed theft</strong>, but rather <em>systematic user-error hotspots</em> 
+            amplified by high volume + casual users. If Divvy wants to reduce lost/stolen bikes or 24h fees, 
+            focusing operations (extra staff checks, better signage, dock maintenance) on these top 10–20 stations 
+            could have an <strong>outsized effect</strong>.
+        </p>
+    </div>
+    
+    <!-- Figure 14: Pareto Chart -->
+    <div class="figure-container">
+        <img src="pareto_chart_stations_seaborn.png" 
+             alt="Top 20 stations with missing bike returns" 
+             class="responsive-img">
+        <figcaption class="figure-caption">
+            <strong>Fig. 14:</strong> Top 20 Stations with Missing Bike Returns (Pareto Analysis)
+            <span class="caption-detail">
+                Concentrated hotspots where casual riders frequently fail to properly dock bikes, 
+                triggering 24-hour system timeouts and missing end coordinates.
+            </span>
+        </figcaption>
+    </div>
+    
+    <!-- Recommendations -->
+    <div class="analysis-note">
+        <div class="note-header">
+            <span class="note-icon">🎯</span>
+            <strong>Strategic Recommendations</strong>
+        </div>
+        <ul class="compact-list">
+            <li><strong>Targeted Operations:</strong> Deploy extra staff checks at top 10–20 high-risk stations during peak evening hours (17:00–21:00)</li>
+            <li><strong>Better Signage:</strong> Install clear docking instructions at stations with high casual rider concentration</li>
+            <li><strong>Dock Maintenance:</strong> Prioritize hardware upgrades at stations with frequent sync errors</li>
+            <li><strong>User Education:</strong> Send push notifications to casual riders about proper docking procedures</li>
+            <li><strong>Fee Reduction:</strong> Consider grace periods or reduced fees for first-time 24h timeout incidents</li>
+        </ul>
+    </div>
 </section>
 
 </body>
