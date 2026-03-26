@@ -1082,13 +1082,15 @@ h3 {
     }
 }
 /* ===== STRATEGIES SECTION STYLES ===== */
+/* ===== FIX: STRATEGIES SECTION WIDTH MATCH ===== */
 .strategies-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 12px;
-    padding: 30px;
-    margin: 25px 0;
-    border-left: 5px solid #667eea;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 20px !important;
+    margin: 20px 0 !important;
+    border-radius: 8px !important;
+    border-left-width: 4px !important;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .strategies-section .section-title {
@@ -1270,22 +1272,22 @@ h3 {
     }
 }
 /* ===== FIX: Combined findings-box + strategies-section Width ===== */
+/* When both classes are used together */
 .findings-box.strategies-section,
 .strategies-section.findings-box {
-    padding: 20px;           /* Match findings-box padding */
-    margin: 20px 0;          /* Match findings-box margin */
-    border-radius: 8px;      /* Match findings-box border-radius */
-    border-left-width: 4px;  /* Match findings-box border width */
-    max-width: 100%;         /* Ensure it doesn't exceed container */
-    width: 100%;             /* Full width within container */
-    box-sizing: border-box;  /* Include padding in width calculation */
+    padding: 20px !important;
+    margin: 20px 0 !important;
+    border-radius: 8px !important;
+    border-left-width: 4px !important;
 }
 
-/* Ensure strategies-section respects container width */
-.container .strategies-section {
+/* Ensure container constraint is respected */
+.container .strategies-section,
+.container .findings-box {
     max-width: 100%;
     width: 100%;
 }
+
 /* Custom list styling for insights */
 .insight-list-custom {
     list-style: none;
@@ -1345,39 +1347,6 @@ h3 {
     padding: 4px 10px;
     border-radius: 4px;
 }
-.analysis-comparison-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    margin: 25px 0;
-    align-items: stretch;  /* ← Makes columns equal height */
-}
-
-.analysis-comparison-grid > div {
-    display: flex;
-    flex-direction: column;
-}
-
-.analysis-comparison-grid .insight-card,
-.analysis-comparison-grid .figure-container {
-    flex: 1;  /* ← Expands to fill available space */
-    height: 100%;
-}
-.highlight-member {
-    color: #667eea;
-    font-weight: 600;
-    background: #f0f4ff;
-    padding: 4px 10px;
-    border-radius: 4px;
-}
-
-.highlight-casual {
-    color: #f5576c;
-    font-weight: 600;
-    background: #fff0f3;
-    padding: 4px 10px;
-    border-radius: 4px;
-}
 /* Add to style.css if needed */
 .highlight-box ul {
     margin: 10px 0 0 20px;
@@ -1393,4 +1362,18 @@ h3 {
 
 .highlight-box ul li strong {
     color: #b7950b;
+}
+/* Add to style.css if needed */
+.data-table td:nth-child(3) {
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
+}
+.data-table td:nth-child(2) {
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    color: #667eea;
+}
+.data-table tr.highlight-row td:nth-child(2) {
+    color: #f5576c;
 }

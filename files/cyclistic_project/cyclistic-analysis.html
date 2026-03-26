@@ -319,7 +319,7 @@
         </figure>
     </div>
 
-    <!-- Weekly Usage Analysis Section -->
+   <!-- Weekly Usage Analysis Section -->
 <section class="weekly-analysis-section">
     
     <!-- Figures Grid -->
@@ -365,6 +365,7 @@
     </div>
     
 </section>
+    
 <!-- Weekly Usage Analysis Section -->
 <div class="analysis-comparison-grid">
     <!-- Figure -->
@@ -404,10 +405,9 @@
         </div>
     </div>
 </div>
-<!-- Top 20 most used route -->
-<h2> Top 20 most used route </h2>
 
-    
+<!-- Top 20 most used route -->
+<div class="analysis-comparison-grid">
     <!-- Figure -->
     <div class="analysis-figure">
         <figure class="figure-container">
@@ -423,42 +423,26 @@
             </figcaption>
         </figure>
     </div>
-</div>
-<div class="insight-content">
-    <ul class="insight-list-custom">
-        <li>
-            <strong>Members:</strong> Students and faculty are the ultimate "Members." They use Divvy as their primary 
-            transit to get from the Metra train station to campus, or from dorms to labs.
-            <span class="caption-detail" style="display: block; margin-top: 8px; font-size: 0.9em;">
-                <em>Pattern:</em> Short, efficient commutes (avg 13-15 min) concentrated in Hyde Park area.
-            </span>
-        </li>
-        <li>
-            <strong>Casuals:</strong> Casual riders (tourists or locals on a weekend) go to Navy Pier,
-            grab a bike, ride the "Loop" along the water, and bring it back.
-            <span class="caption-detail" style="display: block; margin-top: 8px; font-size: 0.9em;">
-                <em>Pattern:</em> Longer leisure rides (avg 23-35 min) clustered around tourist destinations.
-            </span>
-        </li>
-        <li>
-            <strong>Marketing Implication:</strong> Membership marketing should focus on University students in the South 
-            and weekend 'leisure passes' for the Downtown waterfront.
-            <span class="caption-detail" style="display: block; margin-top: 8px; font-size: 0.9em;">
-                <em>Opportunity:</em> Target UChicago community with semester passes; offer weekend-only memberships for tourists.
-            </span>
-        </li>
-    </ul>
     
-    <!-- Add a summary box -->
-    <div class="highlight-box" style="margin-top: 20px;">
-        <strong>📌 Strategic Insight:</strong>
-        <span class="highlight-text">
-            Geographic clustering reveals two distinct markets: 
-            <strong>functional commuters</strong> (South/Hyde Park) vs 
-            <strong>leisure explorers</strong> (Downtown/Lakefront).
-        </span>
+    <!-- Insights -->
+    <div class="analysis-insights">
+        <div class="insight-card">
+            <div class="insight-header">
+                <span class="insight-icon">💡</span>
+                <h3>Key Findings</h3>
+            </div>
+            <div class="insight-content">
+                <ul class="insight-list-custom">
+                    <li><strong>Members:</strong> Students and faculty are the ultimate "Members." They use Divvy as their primary 
+                        transit to get from the Metra train station to campus, or from dorms to labs.</li>
+                    <li><strong>Casuals:</strong> Casual riders (tourists or locals on a weekend) go to Navy Pier,
+                         grab a bike, ride the "Loop" along the water, and bring it back.</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
+
 <!-- Top Routes Analysis Table -->
 <div class="section">
     <div class="section-title">🛣️ Top Routes by User Type</div>
@@ -525,7 +509,6 @@
     </div>
 </div>
 
-            
     <!-- Interactive Visualization -->
     <div class="interactive-section">
         <div class="section-title">️ Most Popular Start Stations</div>
@@ -534,7 +517,7 @@
                  alt="Most Popular Start Stations between members and casual riders" 
                  class="responsive-img img-medium">
             <figcaption class="figure-caption">
-                <span class="caption-detail">Most popular start stations between members and casual riders</span>
+                <span class="caption-detail">Weekly trip average duration between members and casual riders</span>
             </figcaption>
         </figure>
     </div>
@@ -612,72 +595,9 @@
         
         
         
-     <div class="container">  
+       
         <!-- Spatial Analysis -->
-        <h2>4. Spatial Analysis</h2>
-         
-<!-- Special Analysis: Rider Type Comparison -->
-<section class="section">
-    <div class="section-title">🎯 Special Points: Rider Type and total ride time Comparison</div>
-    
-    <!-- Figure: Pie Chart -->
-    <div class="figures-grid">
-        <figure class="figure-container">
-            <img src="ride_comparison_pie.png" 
-                 alt="Proportion of total rides and total ride time by user type" 
-                 class="responsive-img img-medium">
-            <figcaption class="figure-caption">
-                <strong>Fig. 6:</strong> Ride Volume vs. Ride Time Distribution
-                <span class="caption-detail">
-                    Members account for more rides (57%), but Casual riders consume 60.7% of total fleet time 
-                    due to significantly longer average trip duration (23.5 min vs. 12.2 min).
-                </span>
-            </figcaption>
-        </figure>
-    </div>
-    
-    <!-- Comparison Table -->
-    <table class="comparison-table">
-        <thead>
-            <tr>
-                <th>User Type</th>
-                <th>Total Rides</th>
-                <th>Total Minutes</th>
-                <th>Avg. Duration (Min)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="highlight-row">
-                <td><span class="highlight-casual">Casual</span></td>   
-                <td>4,842,378</td>
-                <td>127,301,800</td>
-                <td class="highlight-value">~23.5</td>
-            </tr>
-            <tr>
-                <td><span class="highlight-member">Member</span></td>
-                <td>6,409,773</td>
-                <td>82,433,290</td>
-                <td>~12.2</td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <!-- Key Insight Box -->
-    <div class="highlight-box">
-        <strong>💡 Key Finding:</strong>
-        <span class="highlight-text">
-            While Members take more total rides (57% of trips), Casual riders spend nearly 
-            <strong>2× longer per trip</strong> (23.5 min vs. 12.2 min). This indicates:
-            <ul style="margin: 10px 0 0 20px; padding-left: 10px;">
-                <li><strong>Casual users:</strong> Leisure/recreational trips with extended exploration time</li>
-                <li><strong>Member users:</strong> Efficient, point-to-point commuting</li>
-            </ul>
-            <br>
-            <strong>🚀 Opportunity:</strong> Casual riders account for <strong>60.7% of total fleet utilization time</strong> 
-            — representing massive conversion potential through targeted membership campaigns.
-        </span>
-    </div>
-</section>
+        <h2>4. Spatial Analysis: Heatmaps</h2>
         
         <div class="section">
             <div class="section-title">🗺️ Rider Type Usage Patterns</div>
@@ -710,8 +630,91 @@
                 <p><strong>Casual riders</strong> cluster around <span class="highlight-casual">tourist and recreational areas</span>, while <strong>members</strong> concentrate around <span class="highlight-member">commuting corridors and residential zones</span>.</p>
             </div>
         </div>
+    <h2>Answers to Key Questions:</h2>
+
+        <div class="findings-box">
+            <ul class="findings-list">
+
+                <li>
+                <strong>1. Usage Differences:</strong><br>
+                Members primarily use bikes for <strong>“last-mile” connectivity</strong>, with peak usage likely occurring during 
+                weekday commuting hours (around 8:00 AM and 5:00 PM). Their routes are predictable and concentrated in 
+                commuting corridors and residential areas.<br><br>
+
+                Casual riders, on the other hand, tend to have <strong>longer trip durations</strong>, often using bikes for 
+                sightseeing or weekend recreation. Their usage peaks during weekends and favorable weather conditions, 
+                indicating a leisure-oriented pattern rather than routine travel.
+                </li>
+
+                <li>
+                <strong>2. Why Casual Riders Would Buy Memberships:</strong><br>
+                Casual riders are more likely to convert to members when they use the service frequently 
+                (e.g., more than 3–4 rides per month), as the membership becomes cost-effective.<br><br>
+
+                Additionally, the availability of bikes—especially through flexible options like 
+                <strong>"Public Rack"</strong>—reduces friction in starting a ride. When bikes are easily accessible near 
+                home or work, users are more likely to adopt a subscription model.
+                </li>
+
+                <li>
+                <strong>3. Digital Media Strategy:</strong><br>
+                Cyclistic can leverage <strong>location-based and behavior-driven digital marketing</strong> to convert casual riders. 
+                For example:
+                <ul>
+                    <li>Trigger mobile ads or app notifications when non-members spend time in high-traffic commuting areas.</li>
+                    <li>Target users who take more than three casual trips per month with personalized offers highlighting cost savings.</li>
+                    <li>Use digital campaigns at transit hubs to emphasize the time-saving benefits of biking compared to public transport.</li>
+                </ul>
+                </li>
+
+            </ul>
+        </div>
+
+    <h2>Specials:</h2>
+        <!-- Rider Comparison Table -->
+        <div class="section">
+            <div class="section-title">📊 Rider Type Comparison</div>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>User Type</th>
+                        <th>Total Rides</th>
+                        <th>Total Minutes</th>
+                        <th>Avg. Duration (Min)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight-row">
+                        <td><strong>Casual</strong></td>
+                        <td>4,842,378</td>
+                        <td>127,301,800</td>
+                        <td class="highlight-value">~23.5</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Member</strong></td>
+                        <td>6,409,773</td>
+                        <td>82,433,290</td>
+                        <td>~12.2</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="insight-box">
+                <span class="insight-icon">💡</span>
+                <div class="insight-content">
+                    <strong>Key Finding:</strong> While members take more total rides (68% of trips), 
+                    casual riders spend nearly <strong>2x longer per trip</strong> (23.5 min vs 12.2 min). 
+                    This suggests casual users take leisure/recreational trips, while members use bikes 
+                    for efficient commuting. While Members make up the majority of our subscription base,
+                    Casual riders account for 60% of total fleet utilization time. 
+                    This represents a massive opportunity for conversion based on high-usage patterns.
+                </div>
+            </div>
+        </div>
     </div>
- <div class="container">
+
+<div class="container">
     <div class="findings-box strategies-section">
     <h2>Strategic Recommendations</h2>
     <ol class="strategy-list">
@@ -794,6 +797,702 @@
 </div>
 </div>
 
+
+
+<!-- Special Analysis: Rider Type Comparison -->
+<section class="section">
+    <div class="section-title">🎯 Special Points: Rider Type and total ride time Comparison</div>
+    
+    <!-- Figure: Pie Chart -->
+    <div class="figures-grid">
+        <figure class="figure-container">
+            <img src="ride_comparison_pie.png" 
+                 alt="Proportion of total rides and total ride time by user type" 
+                 class="responsive-img img-medium">
+            <figcaption class="figure-caption">
+                <strong>Fig. 6:</strong> Ride Volume vs. Ride Time Distribution
+                <span class="caption-detail">
+                    Members account for more rides (57%), but Casual riders consume 60.7% of total fleet time 
+                    due to significantly longer average trip duration (23.5 min vs. 12.2 min).
+                </span>
+            </figcaption>
+        </figure>
+    </div>
+    
+    <!-- Comparison Table -->
+    <table class="comparison-table">
+        <thead>
+            <tr>
+                <th>User Type</th>
+                <th>Total Rides</th>
+                <th>Total Minutes</th>
+                <th>Avg. Duration (Min)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="highlight-row">
+                <td><span class="highlight-casual">Casual</span></td>   
+                <td>4,842,378</td>
+                <td>127,301,800</td>
+                <td class="highlight-value">~23.5</td>
+            </tr>
+            <tr>
+                <td><span class="highlight-member">Member</span></td>
+                <td>6,409,773</td>
+                <td>82,433,290</td>
+                <td>~12.2</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Key Insight Box -->
+    <div class="highlight-box">
+        <strong>💡 Key Finding:</strong>
+        <span class="highlight-text">
+            While Members take more total rides (57% of trips), Casual riders spend nearly 
+            <strong>2× longer per trip</strong> (23.5 min vs. 12.2 min). This indicates:
+            <ul style="margin: 10px 0 0 20px; padding-left: 10px;">
+                <li><strong>Casual users:</strong> Leisure/recreational trips with extended exploration time</li>
+                <li><strong>Member users:</strong> Efficient, point-to-point commuting</li>
+            </ul>
+            <br>
+            <strong>🚀 Opportunity:</strong> Casual riders account for <strong>60.7% of total fleet utilization time</strong> 
+            — representing massive conversion potential through targeted membership campaigns.
+        </span>
+    </div>
+</section>
+<!-- Missing Data Analysis Section -->
+<section class="section">
+    <div class="section-title">🔍 Data Quality: Missing Values Assessment</div>
+    
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Column</th>
+                <th>Missing Count</th>
+                <th>% Missing</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Zero Missing (Good) -->
+            <tr class="low-missing">
+                <td><code>ride_id</code></td>
+                <td>0</td>
+                <td>0.0%</td>
+                <td>✅ Complete</td>
+                <td>—</td>
+            </tr>
+            <tr class="low-missing">
+                <td><code>rideable_type</code></td>
+                <td>0</td>
+                <td>0.0%</td>
+                <td>✅ Complete</td>
+                <td>—</td>
+            </tr>
+            <tr class="low-missing">
+                <td><code>started_at</code></td>
+                <td>0</td>
+                <td>0.0%</td>
+                <td>✅ Complete</td>
+                <td>—</td>
+            </tr>
+            <tr class="low-missing">
+                <td><code>ended_at</code></td>
+                <td>0</td>
+                <td>0.0%</td>
+                <td>✅ Complete</td>
+                <td>—</td>
+            </tr>
+            <tr class="low-missing">
+                <td><code>start_lat</code></td>
+                <td>0</td>
+                <td>0.0%</td>
+                <td>✅ Complete</td>
+                <td>—</td>
+            </tr>
+            <tr class="low-missing">
+                <td><code>start_lng</code></td>
+                <td>0</td>
+                <td>0.0%</td>
+                <td>✅ Complete</td>
+                <td>—</td>
+            </tr>
+            <tr class="low-missing">
+                <td><code>member_casual</code></td>
+                <td>0</td>
+                <td>0.0%</td>
+                <td>✅ Complete</td>
+                <td>—</td>
+            </tr>
+            
+            <!-- Low Missing (Acceptable) -->
+            <tr>
+                <td><code>end_lat</code></td>
+                <td>10,629</td>
+                <td>~0.09%</td>
+                <td>⚠️ Low</td>
+                <td>Drop rows</td>
+            </tr>
+            <tr>
+                <td><code>end_lng</code></td>
+                <td>10,629</td>
+                <td>~0.09%</td>
+                <td>⚠️ Low</td>
+                <td>Drop rows</td>
+            </tr>
+            
+            <!-- High Missing (Critical) -->
+            <tr class="highlight-row">
+                <td><code>start_station_name</code></td>
+                <td><strong>1,523,873</strong></td>
+                <td><strong>~13.0%</strong></td>
+                <td>🔴 High</td>
+                <td>Use station_id</td>
+            </tr>
+            <tr class="highlight-row">
+                <td><code>start_station_id</code></td>
+                <td><strong>1,523,870</strong></td>
+                <td><strong>~13.0%</strong></td>
+                <td>🔴 High</td>
+                <td>Impute/Exclude</td>
+            </tr>
+            <tr class="highlight-row">
+                <td><code>end_station_name</code></td>
+                <td><strong>1,631,912</strong></td>
+                <td><strong>~13.9%</strong></td>
+                <td>🔴 High</td>
+                <td>Use station_id</td>
+            </tr>
+            <tr class="highlight-row">
+                <td><code>end_station_id</code></td>
+                <td><strong>1,631,912</strong></td>
+                <td><strong>~13.9%</strong></td>
+                <td>🔴 High</td>
+                <td>Impute/Exclude</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Key Insight Box -->
+    <div class="highlight-box">
+        <strong>📌 Key Finding:</strong>
+        <span class="highlight-text">
+            <ul class="compact-list">
+                <li>
+                    <strong>✅ Core fields are complete:</strong> 
+                    <code>ride_id</code>, <code>started_at</code>, and <code>ended_at</code> have 0 missing values (100% data integrity).
+                </li>
+                <li>
+                    <strong>⚠️ Start station metadata has gaps:</strong> 
+                    Geographic coordinates (<code>start_lat</code>, <code>start_lng</code>) are complete, but 
+                    <strong>~1.52M records</strong> (≈13%) are missing <code>start_station_name</code> or <code>start_station_id</code>.
+                </li>
+                <li>
+                    <strong>⚠️ End station metadata has gaps:</strong> 
+                    <strong>~1.63M records</strong> (≈13.9%) lack <code>end_station_name</code> or <code>end_station_id</code>, 
+                    while only <strong>10,629 records</strong> (≈0.09%) are missing end coordinates (<code>end_lat</code>, <code>end_lng</code>).
+                </li>
+            </ul>
+        </span>
+    </div>
+</section>
+
+
+
+<!-- Statistical Summary: Distance to Nearest Station -->
+<!-- Missing Data Analysis: Start Stations & Distance -->
+<section class="section">
+    
+    <!-- Section Title (always at top) -->
+    <div class="section-title">🔍 Missing Start Stations & Distance Analysis</div>
+    
+    <!-- Part 1: Missing Start Stations Facts -->
+    <div class="findings-box">
+        <div class="section-title" style="font-size: 1.1em; margin-bottom: 12px; border: none; padding: 0;">
+            Facts about Missing Start Stations:
+        </div>
+        <ul class="findings-list">
+            <li>
+                Every trip with a missing start station name or ID is an electric bike.
+            </li>
+            <li>
+                Missing station names include <strong>56% Member / 44% Casual</strong> — nearly identical to the overall rides proportion.
+            </li>
+            <li>
+                Both Members and Casuals use the "Dockless" feature of electric bikes at the same rate.
+            </li>
+            <li>
+                <strong>Implication:</strong> Missing station data reflects dockless e-bike behavior, not user-type bias.
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Part 2: Distance to Nearest Station Table -->
+    <div class="section-title" style="margin-top: 25px;">📏 Distance to Nearest Station (meters)</div>
+    
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Statistic</th>
+                <th>Value</th>
+                <th>Interpretation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Count</strong></td>
+                <td>1,523,870</td>
+                <td>Valid observations</td>
+            </tr>
+            <tr class="low-missing">
+                <td><strong>Mean</strong></td>
+                <td>99.1 m</td>
+                <td>Average distance to nearest station</td>
+            </tr>
+            <tr>
+                <td><strong>Std Dev</strong></td>
+                <td>158.7 m</td>
+                <td>High variability in distances</td>
+            </tr>
+            <tr class="low-missing">
+                <td><strong>Min</strong></td>
+                <td>0.0 m</td>
+                <td>Rides starting/ending at a station</td>
+            </tr>
+            <tr class="low-missing">
+                <td><strong>25th Percentile</strong></td>
+                <td>0.0 m</td>
+                <td>25% of rides are at station locations</td>
+            </tr>
+            <tr>
+                <td><strong>Median (50%)</strong></td>
+                <td>9.6 m</td>
+                <td>Half of rides are within 10m of a station</td>
+            </tr>
+            <tr>
+                <td><strong>75th Percentile</strong></td>
+                <td>143.3 m</td>
+                <td>75% of rides are within ~140m of a station</td>
+            </tr>
+            <tr class="highlight-row">
+                <td><strong>Max</strong></td>
+                <td>4,576.6 m</td>
+                <td>Outlier: ~4.6 km from nearest station</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Key Insight Box -->
+    <div class="highlight-box">
+        <strong>📌 Key Finding:</strong>
+        <span class="highlight-text">
+            <ul>
+                <li><strong>25% is 0.00 meters:</strong> This means exactly one-quarter of your "missing station" trips were actually perfectly at a station coordinate. The system just didn't record the name.</li>
+                <li><strong>50% (Median) is 9.64 meters:</strong>  This indicates that half of the 'street-side' parking is actually Station-Adjacent, likely due to docks being full or GPS 'drift' during the locking process. </li>
+                <li><strong>75% is 143 meters:</strong> many people (25%) are parking further than a 2-minute walk from any station.</li>
+                <li><strong>The "Extreme Outlier" (4.5 km):</strong> This bike was likely "lost" to the system for a while or used by someone in a neighborhood that has zero bike-share infrastructure</li>
+            </ul>
+        </span>
+    </div>
+
+    <!-- Ghost Returns Analysis Section -->
+<section class="section">
+    <div class="section-title">🔄 Top 10 "Ghost Return" Stations (0m Trips)</div>
+    
+    <!-- Summary Stats Box -->
+    <div class="stats-box">
+        <div class="stat-item highlight">
+            <span class="stat-label">Total Ghost Returns</span>
+            <span class="stat-value">670,723</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Top 10 Share</span>
+            <span class="stat-value percent">32.52%</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Avg. per Station</span>
+            <span class="stat-value">22,114</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Data Quality Flag</span>
+            <span class="stat-value" style="color:#ffc107;">⚠️ Review</span>
+        </div>
+    </div>
+    
+    <!-- Main Table -->
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Station Name</th>
+                <th>Count</th>
+                <th>Proportion</th>
+                <th>Cumulative Share</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="highlight-row">
+                <td>🥇 #1</td>
+                <td><strong>Hyde Park Blvd & 55th St</strong></td>
+                <td>36,328</td>
+                <td>5.42%</td>
+                <td><strong>5.42%</strong></td>
+            </tr>
+            <tr class="highlight-row">
+                <td>🥈 #2</td>
+                <td><strong>N Sheffield Ave & W Wellington Ave</strong></td>
+                <td>24,703</td>
+                <td>3.68%</td>
+                <td><strong>9.10%</strong></td>
+            </tr>
+            <tr class="highlight-row">
+                <td>🥉 #3</td>
+                <td><strong>N Clark St & W Elm St</strong></td>
+                <td>24,391</td>
+                <td>3.64%</td>
+                <td><strong>12.74%</strong></td>
+            </tr>
+            <tr>
+                <td>#4</td>
+                <td>Hampden Ct & Diversey Ave</td>
+                <td>21,834</td>
+                <td>3.26%</td>
+                <td>15.99%</td>
+            </tr>
+            <tr>
+                <td>#5</td>
+                <td>N Green St & W Lake St</td>
+                <td>19,896</td>
+                <td>2.97%</td>
+                <td>18.96%</td>
+            </tr>
+            <tr>
+                <td>#6</td>
+                <td>W Washington Blvd & N Peoria St</td>
+                <td>19,438</td>
+                <td>2.90%</td>
+                <td>21.86%</td>
+            </tr>
+            <tr>
+                <td>#7</td>
+                <td>Public Rack - Rockwell & Division</td>
+                <td>18,888</td>
+                <td>2.82%</td>
+                <td>24.67%</td>
+            </tr>
+            <tr>
+                <td>#8</td>
+                <td>Milwaukee Ave & Fullerton Ave</td>
+                <td>18,108</td>
+                <td>2.70%</td>
+                <td>27.37%</td>
+            </tr>
+            <tr>
+                <td>#9</td>
+                <td>W Oakdale Ave & N Broadway</td>
+                <td>17,934</td>
+                <td>2.67%</td>
+                <td>30.05%</td>
+            </tr>
+            <tr>
+                <td>#10</td>
+                <td>Kedzie Ave & George St</td>
+                <td>16,622</td>
+                <td>2.48%</td>
+                <td><strong>32.52%</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Key Insight Box -->
+    <div class="highlight-box">
+        <strong>Further Facts:</strong>
+        <span class="highlight-text">By analyzing the distance distribution, we find that 
+            there is a massive spike at exactly 0 meters but almost nothing between 1 and 20 meters.
+
+            If these were overflow events, we would see a distribution of distances between 1m and 20m. 
+            Instead, the lack of data in the 1–20m range proves that 12.7% of our 'Missing Data' is caused 
+            by <strong>Software Sync Errors</strong>, not by physical station capacity.
+
+           <strong>The Result:</strong> We are losing high-quality data at our most popular stations
+            (Hyde Park, Sheffield) due to server-side handshake failures.
+        </span>
+    </div>
+
+    <div class="highlight-box">
+        <strong>📌 Summary:</strong>
+        <span class="highlight-text">
+            <ul class="compact-list">
+            <li>In a city with over <straong>800 stations</straong>. The data shows that just 10 locations are responsible
+             for nearly one-third (32.5%) of all "Ghost Starts" in Chicago.</li>
+            <li><strong>Technical Discovery:</strong> Discrete System Logic Failure. Our investigation into the 0-meter 
+                distance bracket reveals a total lack of 'spatial decay' (no trips recorded between 1m–20m). 
+                This suggests that the 'Ghost Starts' at these Top 10 hubs are not caused by user parking behavior or GPS signal drift. 
+                Instead, this is a high-volume database synchronization error.
+                 The system is successfully capturing precise location data (0m) but failing to execute the relational 
+                 join between the trip event and the station name. This technical debt accounts for 32.5% of 
+                 our total missing data points.</li>
+            <li><strong>One Guess:</strong> Thess stations are so busy that the digital handshake is failing under the pressure of high turnover.</li>
+            <li>The first three stations —-<strong>Hyde Park, Sheffield/Wellington, and Clark/Elm— </strong>
+                 account for almost 13% of all missing station data. Fixing the sensors at just these three
+                  coordinates would "clean up" over 85,000 messy data points per year.</li>
+        </ul>
+            
+        </span>
+    </div>
+    
+</section>
+
+
+
+    <!-- Distribution Characteristics Note -->
+    <div class="analysis-note" style="margin-top: 20px;">
+        <div class="note-header">
+            <span class="note-icon">📊</span>
+            <strong>Time Distribution of the Cyclistic System is due to  synchronization error</strong>
+        </div>
+        <div class="analysis-figure">
+        <figure class="figure-container">
+            <img src="Top_10_Station_Audit.png" 
+                 alt="Top 10 stations which are physically 'broken\'or 'full' " 
+                 class="responsive-img">
+            <figcaption class="figure-caption">
+                 Time Distribution of the Cyclistic System is due to  synchronization error
+                <span class="caption-detail">
+                </span>
+            </figcaption>
+        </figure>
+    </div>
+       <!-- Station Analysis: Missing Data Patterns -->
+<section class="section">
+    <div class="section-title">🗺️ Station Groups with Missing Data Patterns</div>
+    
+    <!-- Summary Stats -->
+    <div class="stats-box">
+        <div class="stat-item highlight">
+            <span class="stat-label">Total Groups</span>
+            <span class="stat-value">4</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Stations Analyzed</span>
+            <span class="stat-value">10</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Ghost Returns</span>
+            <span class="stat-value">670K+</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Top Share</span>
+            <span class="stat-value percent">32.5%</span>
+        </div>
+    </div>
+    
+    <!-- Group 1: University Powerhouses -->
+    <div class="findings-box">
+        <div class="section-title" style="font-size: 1.2em; border: none; padding: 0; margin-bottom: 15px;">
+            🎓 Group 1: The University Powerhouses
+        </div>
+        <p class="note-text"><em>These stations serve students and faculty. They have a "Plateau" shape because usage is high all day, not just at 9:00 AM.</em></p>
+        
+        <ul class="compact-list">
+            <li>
+                <strong>#1: Hyde Park Blvd & 55th St</strong>
+                <span class="caption-detail">
+                    The undisputed "Data Black Hole." Serving the University of Chicago, this station handles a constant flow of students moving between dorms and labs. The 5.42% proportion is massive; the system literally cannot keep up with how fast bikes are swapped here.
+                </span>
+            </li>
+            <li>
+                <strong>#3: Harper Ave & 59th St</strong>
+                <span class="caption-detail">
+                    Another campus hub. High-density student housing means bikes are constantly "pinging" the server as they are docked and undocked within seconds.
+                </span>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Group 2: CTA Transit Connectors -->
+    <div class="findings-box">
+        <div class="section-title" style="font-size: 1.2em; border: none; padding: 0; margin-bottom: 15px;">
+            🚇 Group 2: The CTA Transit Connectors
+        </div>
+        <p class="note-text"><em>These are "Last-Mile" stations. They have sharp spikes when the trains arrive.</em></p>
+        
+        <ul class="compact-list">
+            <li>
+                <strong>#2: N Sheffield Ave & W Wellington Ave</strong>
+                <span class="caption-detail">
+                    The Brown Line Gateway. This is a high-speed transfer point. When a train arrives, 20 people might try to grab a bike at once. This "Burst Traffic" is likely crashing the local station's API sync, causing the NULL names.
+                </span>
+            </li>
+            <li>
+                <strong>#4: Hampden Ct & Diversey Ave</strong>
+                <span class="caption-detail">
+                    A dense residential connector near the lakefront. It captures people heading toward the Brown/Purple lines.
+                </span>
+            </li>
+            <li>
+                <strong>#9: W Oakdale Ave & N Broadway</strong>
+                <span class="caption-detail">
+                    High-density Lakeview living. It serves as a starting point for the morning "rush" toward downtown.
+                </span>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Group 3: Business & "Old School" Hubs -->
+    <div class="findings-box">
+        <div class="section-title" style="font-size: 1.2em; border: none; padding: 0; margin-bottom: 15px;">
+            🏢 Group 3: The Business & "Old School" Hubs
+        </div>
+        <p class="note-text"><em>Located in the Loop or heavy commercial areas.</em></p>
+        
+        <ul class="compact-list">
+            <li>
+                <strong>#3: N Clark St & W Elm St</strong>
+                <span class="caption-detail">
+                    Near the Gold Coast/Old Town border. It's a major north-south transit artery. The high volume of "Member" starts suggests professional commuters are the ones experiencing these system errors.
+                </span>
+            </li>
+            <li>
+                <strong>#5: N Green St & W Lake St</strong> & <strong>#6: W Washington Blvd & N Peoria St</strong>
+                <span class="caption-detail">
+                    These are in the West Loop/Fulton Market (the tech/office district). These stations have huge evening spikes as people leave their offices (Google, McDonald's HQ). The server fails most often here at 5:00 PM.
+                </span>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Group 4: Neighborhood Anchors -->
+    <div class="findings-box">
+        <div class="section-title" style="font-size: 1.2em; border: none; padding: 0; margin-bottom: 15px;">
+            🏘️ Group 4: The Neighborhood Anchors
+        </div>
+        <p class="note-text"><em>Located in "hip" residential neighborhoods (Logan Square/Wicker Park).</em></p>
+        
+        <ul class="compact-list">
+            <li>
+                <strong>#8: Milwaukee Ave & Fullerton Ave</strong>
+                <span class="caption-detail">
+                    Located on the "Hipster Highway" (Milwaukee Ave). This is one of the busiest bike lanes in the US. The station is constantly active, leading to "Race Conditions" in the database.
+                </span>
+            </li>
+            <li>
+                <strong>#10: Kedzie Ave & George St</strong>
+                <span class="caption-detail">
+                    Serving the Avondale/Logan Square area. It's a major residential starting point that feeds into the Milwaukee Ave bike corridor.
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="findings-box">
+        <div class="section-title" style="font-size: 1.2em; border: none; padding: 0; margin-bottom: 15px;">
+            🏘️ Group 5: The Infrastructure Outlier
+        </div>
+        <p class="note-text"><em>Located in "hip" residential neighborhoods (Logan Square/Wicker Park).</em></p>
+        
+        <ul class="compact-list">
+            <li>
+                <strong>#7: Public Rack - Rockwell & Division</strong>
+                <span class="caption-detail">
+                    It's a Public Rack, not a smart station. The 0m NULLs here are because there is no station hardware to talk to. It proves that this specific corner needs a real, powered station immediately.
+            </li>
+        </ul>
+    </div>
+
+
+    
+    <!-- Key Insight Box -->
+    <div class="highlight-box">
+        <strong>📌 Key Finding:</strong>
+        <span class="highlight-text">
+            Missing station data is <strong>not random</strong> — it clusters around high-traffic, high-turnover locations: 
+            <strong>university hubs</strong> (constant student flow), <strong>CTA connectors</strong> (burst traffic), 
+            <strong>business districts</strong> (rush hour spikes), and <strong>neighborhood anchors</strong> (steady activity). 
+            This suggests the issue is <em>system load-related</em>, not user-behavior-related.
+        </span>
+    </div>
+    
+    <!-- Technical Note -->
+    <div class="analysis-note" style="margin-top: 20px;">
+        <div class="note-header">
+            <span class="note-icon">⚙️</span>
+            <strong>Technical Hypothesis</strong>
+        </div>
+        <ul class="compact-list">
+            <li><strong>API Sync Lag:</strong> High-frequency dock/undock events overwhelm station-level data logging</li>
+            <li><strong>Database Race Conditions:</strong> Concurrent writes to station_name fields cause NULL values</li>
+            <li><strong>Electric Bike Factor:</strong> Dockless e-bikes may bypass traditional station registration</li>
+            <li><strong>Recommendation:</strong> Prioritize infrastructure upgrades at top 10 stations to reduce data loss</li>
+        </ul>
+    </div>
+</section>
+    </div>
+    <div class="analysis-note" style="margin-top: 20px;">
+        <div class="note-header">
+            <span class="note-icon">📊</span>
+            <strong>Top 10 stations with the distance to the  nearest stations from 20 m to 200 meter </strong>
+        </div>
+        <div class="analysis-figure">
+        <figure class="figure-container">
+            <img src="top_10_station_heartbeats.png" 
+                 alt="Top 10 stations which are physically 'broken\'or 'full' in 200 meters " 
+                 class="responsive-img">
+        </figure>
+    </div>
+        <ul class="compact-list">
+            <li> There are 253 stations with the distance to the neares stations larger than 20 meter.</li>
+            <li>All the e-bikes will be located at a same fixed coorediantes, like  <strong> 'University Ave & 57th St'</strong> with 64921 trips having the same coordinates (41.79, -87.6). 
+                <strong>'LaSalle St & Illinois St'</strong> with 32390 trips having the same coordinates (41.89, -87.63).
+            </li>
+            <li>When an e-bike's individual GPS fails or is blocked by a large stone building (like the Regenstein Library, UChicago Bookstore, the Merchandise Mart and Salesforce Tower), GPS signals suffer from "Urban Canyon Interference. The system doesn't just leave the location blank.</li>
+            <li>The bike-share companies create "Virtual Stations" that don't have physical docks. They exist only in the code.</li>
+            <li>Precisly to say, the system is programmatically 'snapping' e-bikes to a central anchor point when they are parked in high-density campus zones.</li>
+            <li>This hides the true physical distribution of the bikes. While it makes the database look organized, it masks where students are actually struggling to find parking.
+                 We recommend that the engineering team restores raw GPS pings to allow for better infrastructure planning.</li>
+        </div>
+</section>
+<section>
+    <h3> The lost end parking coordinates</h3>
+    <div>
+        <ul>
+            <li> In two years, 10,629 classic bike lost the end parking coordiantes.</li>
+            <li> The Fig 10. reveals two distinct patterns. 
+                While 18.6% are short-duration (less than 5 hours) technical sync errors, 
+                The bike was probably returned to a station shortly after, but the system failed to record the end location properly at that moment (common with classic bikes that rely on station hardware). Many of these get resolved quickly by the next user or staff, which is why the duration stays short.
+            </li>
+            <li> The remaining 54.1% are 24-hour system timeouts. 
+                These are the big spike you saw around 1,440–1,500 minutes in the histogram.
+                Divvy’s system automatically closes any open classic-bike ride after 24 consecutive 
+                hours if it hasn’t been properly docked. At that point, the trip is forcibly ended for billing purposes, 
+                end_lat/end_lng (and end station info) remain missing. The rider may be charged a lost/stolen bike fee </li>
+        </ul>
+    </div>
+    <figure class="figure-container">
+            <img src="duration_distribution_all.png" 
+                 alt="Distribution of the missing end geometry coordinates " 
+                 class="responsive-img">
+            <figcaption class="figure-caption">
+                 Fig. 10 : Distribution of the missing end geometry coordinates 
+                <span class="caption-detail">
+                </span>
+            </figcaption>
+    </figure>
+
+    <figure class="figure-container">
+            <img src="duration_distribution_600.png" 
+                 alt="Distribution of the missing end geometry coordinates unter 10 hours " 
+                 class="responsive-img">
+            <figcaption class="figure-caption">
+                 Fig. 11 : Distribution of the missing end geometry coordinates uter 10 hours
+                <span class="caption-detail">
+                </span>
+            </figcaption>
+    </figure>
+
+
+</section>
 
 </body>
 </html>
